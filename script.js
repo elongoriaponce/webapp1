@@ -36,9 +36,13 @@ function displayWeather(data) {
 
         const date = new Date(day.date);
         const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+        const dayOfMonth = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const formattedDate = `${dayOfMonth}/${month}`;
 
         dayElement.innerHTML = `
             <h2>${dayName}</h2>
+            <p class="date">${formattedDate}</p>
             <img src="https:${day.day.condition.icon}" alt="${day.day.condition.text}">
             <p>Max: ${day.day.maxtemp_c}°C</p>
             <p>Min: ${day.day.mintemp_c}°C</p>
