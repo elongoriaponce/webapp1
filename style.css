@@ -46,3 +46,10 @@ h1 {
     font-size: 1em;
     color: #333;
 }
+
+#location-name {
+    text-align: center;
+    color: #666;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
