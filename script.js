@@ -1,5 +1,6 @@
 const apiKey = 'e1728ee5dc8e4303bb5155756250909';
 const weatherContainer = document.getElementById('weather-container');
+const locationName = document.getElementById('location-name');
 const loading = document.getElementById('loading');
 
 function fetchWeather(lat, lon) {
@@ -24,6 +25,10 @@ function fetchWeather(lat, lon) {
 function displayWeather(data) {
     // Clear loading message
     weatherContainer.innerHTML = '';
+
+    // Display location name
+    const location = data.location;
+    locationName.textContent = `${location.name}, ${location.region}`;
 
     data.forecast.forecastday.forEach(day => {
         const dayElement = document.createElement('div');
