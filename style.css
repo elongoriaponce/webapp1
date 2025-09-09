@@ -31,9 +31,16 @@ h1 {
 }
 
 .day h2 {
-    margin: 0 0 10px;
+    margin: 0 0 5px;
     font-size: 1.2em;
     color: #555;
+}
+
+.day .date {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 .day img {
