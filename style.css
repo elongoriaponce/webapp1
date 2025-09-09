@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#weather-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+}
+
+.day {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 120px;
+}
+
+.day h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.day img {
+    width: 64px;
+    height: 64px;
+}
+
+.day p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+}
