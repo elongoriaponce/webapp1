@@ -4,7 +4,7 @@ const locationName = document.getElementById('location-name');
 const loading = document.getElementById('loading');
 
 function fetchWeather(lat, lon) {
-    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=7`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=5`;
 
     fetch(apiUrl)
         .then(response => {
