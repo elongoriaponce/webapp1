@@ -1,3 +1,3 @@
 # webapp1
 Open
-https://htmlpreview.github.io/?https://github.com/enlongo/webapp1/blob/main/webapp1/index.html
+https://htmlpreview.github.io/?https://github.com/elongoriaponce/webapp1/blob/master/index.html
